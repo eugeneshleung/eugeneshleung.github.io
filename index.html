@@ -15,9 +15,11 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Hi, my name is Eugene </h1>
-						<img src="profile.JPG" id="profile_img" alt="profile image" style="border-radius:50%">
+						<h1 id="myname"></h1>
+						<img src="profile.JPG" id="profile_img" alt="profile image">
+						
 						<p>Software Engineer &nbsp;&bull;&nbsp; Builder &nbsp;&bull;&nbsp; Backpacker</p>
+						
 						<nav>
 							<ul>
 								<li><a href="mailto:leungshgene@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
@@ -30,15 +32,33 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; 2018 Eugene Leung</span>
+						<span class="copyright">&copy; Eugene Leung 2018</span>
 					</footer>
 
 			</div>
 		</div>
 		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.onload = function() { 
+				document.body.classList.remove('is-preload');
+				typeWriter();
+			}
 			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			window.onorientationchange = function() { 
+				document.body.scrollTop = 0; 
+				
+			}
+			var i = 0;
+			var txt = 'Hi, my name is Eugene.';
+			var speed = 500;
+
+			function typeWriter() {
+			  if (i < txt.length) {
+				document.getElementById("myname").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+				if(i==5) speed =100;
+			  }
+			}
 		</script>
 	</body>
 </html>
