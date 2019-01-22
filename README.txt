@@ -15,13 +15,8 @@ a talented photographer from Vancouver who graciously released it on Unsplash un
 the CC0 license. Be sure to check out his other stuff over at flickr (link below)
 as well as all the other kickass CC0-licensed images at Unsplash (unsplash.com).
 
-Questions/comments/issues = just email or find me on Twitter. Have fun!
 
-AJ
-aj@lkn.io | @ajlkn
-
-
-The Scrolling Background:
+#The Scrolling Background:
 
 	This relies entirely on CSS to do its thing, which is cool, but that makes
 	changing it a bit weird/tricky at first. You can still use pretty much any image
@@ -33,7 +28,6 @@ The Scrolling Background:
 	- Fades to a solid color either at the top of bottom (which is used to fill
 	  the empty space above or below your image).
 
-	Now, there are two ways to use it: with CSS, or with Sass:
 
 	CSS:
 
@@ -50,8 +44,7 @@ The Scrolling Background:
 		of your image. Change $bg-width if your image is something other than
 		1500px wide.
 
-
-Credits:
+#Credits:
 
 	Background Image:
 		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
